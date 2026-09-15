@@ -1,0 +1,218 @@
+[33mcommit d4f052798ccf3baba9e0fda15c14b1f618c7be8e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Christoph Fleckinger <you@example.com>
+Date:   Tue Sep 15 19:04:21 2026 +0200
+
+    sdda
+
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 59560a2..8f51ad8 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -1,13 +1,775 @@[m
+[31m-```html[m
+ <!DOCTYPE html>[m
+ <html lang="de">[m
+ <head>[m
+     <meta charset="UTF-8">[m
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[31m-    <title>Bayern Beratung</title>[m
+[32m+[m
+[32m+[m[32m    <meta name="description"[m
+[32m+[m[32m          content="Professionelle Energieberatung für Wohngebäude. Energie sparen, Kosten senken und Immobilien nachhaltig modernisieren.">[m
+[32m+[m
+[32m+[m[32m    <title>Energieberatung | Energie sparen. Zukunft gestalten.</title>[m
+[32m+[m
+[32m+[m[32m    <link rel="stylesheet" href="style.css">[m
+ </head>[m
+[32m+[m
+ <body>[m
+ [m
+[32m+[m[32m<!-- ================= HEADER ================= -->[m
+[32m+[m
+[32m+[m[32m<header class="header">[m
+[32m+[m[32m    <div class="container nav">[m
+[32m+[m
+[32m+[m[32m        <a href="#" class="logo">[m
+[32m+[m[32m            <span class="logo-icon">⚡</span>[m
+[32m+[m[32m            <span>Energie<span>Beratung</span></span>[m
+[32m+[m[32m        </a>[m
+[32m+[m
+[32m+[m[32m        <nav class="navigation">[m
+[32m+[m[32m            <a href="#leistungen">Leistungen</a>[m
+[32m+[m[32m            <a href="#ueber-uns">Über uns</a>[m
+[32m+[m[32m            <a href="#ablauf">Ablauf</a>[m
+[32m+[m[32m            <a href="#kontakt">Kontakt</a>[m
+[32m+[m[32m        </nav>[m
+[32m+[m
+[32m+[m[32m        <a href="#kontakt" class="nav-button">[m
+[32m+[m[32m            Beratung anfragen[m
+[32m+[m[32m        </a>[m
+[32m+[m
+[32m+[m[32m        <button class="mobile-menu" aria-label="Menü öffnen">[m
+[32m+[m[32m            ☰[m
+[32m+[m[32m        </button>[m
+[32m+[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m</header>[m
+[32m+[m
+[32m+[m
+[32m+[m[32m<!-- ================= HERO ================= -->[m
+[32m+[m
+[32m+[m[32m<main>[m
+[32m+[m
+[32m+[m[32m<section class="hero">[m
+[32m+[m
+[32m+[m[32m    <div class="hero-background"></div>[m
+[32m+[m
+[32m+[m[32m    <div class="container hero-content">[m
+[32m+[m
+[32m+[m[32m        <div class="hero-text">[m
+[32m+[m
+[32m+[m[32m            <div class="badge">[m
+[32m+[m[32m                <span></span>[m
+[32m+[m[32m                Unabhängige Energieberatung[m
+[32m+[m[32m            </div>[m
+[32m+[m
+[32m+[m[32m            <h1>[m
+[32m+[m[32m                Energie sparen.[m
+[32m+[m[32m                <strong>Zukunft gestalten.</strong>[m
+[32m+[m[32m            </h1>[m
+[32m+[m
+[32m+[m[32m            <p class="hero-description">[m
+[32m+[m[32m                Wir unterstützen Eigentümer und Unternehmen dabei,[m
+[32m+[m[32m                Energieverbrauch zu reduzieren, Kosten zu senken und[m
+[32m+[m[32m                Immobilien nachhaltig zu modernisieren.[m
+[32m+[m[32m            </p>[m
+[32m+[m
+[32m+[m[32m            <div class="hero-buttons">[m
+[32m+[m
+[32m+[m[32m                <a href="#kontakt" class="button button-primary">[m
+[32m+[m[32m                    Kostenlose Erstberatung[m
+[32m+[m[32m                    <span>→</span>[m
+[32m+[m[32m                </a>[m
+[32m+[m
+[32m+[m[32m                <a href="#leistungen" class="button button-secondary">[m
+[32m+[m[32m                    Unsere Leistungen[m
+[32m+[m[32m                </a>[m
+[32m+[m
+[32m+[m[32m            </div>[m
+[32m+[m
+[32m+[m[32m            <div class="hero-trust">[m
+[32m+[m
+[32m+[m[32m                <div class="trust-item">[m
+[32m+[m[32m                    <strong>✓</strong>[m
+[32m+[m[32m                    Unabhängige Beratung[m
+[32m+[m[32m                </div>[m
+[32m+[m
+[32m+[m[32m                <div class="trust-item">[m
+[32m+[m[32m                    <strong>✓</strong>[m
+[32m+[m[32m                    Individuelle Lösungen[m
+[32m+[m[32m                </div>[m
+[32m+[m
+[32m+[m[32m                <div class="trust-item">[m
+[32m+[m[32m                    <strong>✓</strong>[m
+[32m+[m[32m                    Nachhaltig geplant[m
+[32m+[m[32m                </div>[m
+[32m+[m
+[32m+[m[32m            </div>[m
+[32m+[m
+[32m+[m[32m        </div>[m
+[32m+[m
+[32m+[m[32m        <div class="hero-card">[m
+[32m+[m
+[32m+[m[32m            <div class="energy-circle">[m
+[32m+[m[32m                <span>−</span>[m
+[32m+[m[32m                <strong>42%</strong>[m
+[32m+[m[32m                <small>Energieeinsparung*</small>[m
+[32m+[m[32m            </div>[m
+[32m+[m
+[32m+[m[32m            <div class="hero-card-content">[m
+[32m+[m
+[32m+[m[32m                <h3>Ihr Einsparpotenzial</h3>[m
+[32m+[m
+[32m+[m[32m                <p>[m
+[32m+[m[32m                    Erfahren Sie, wie viel Energie und Kosten[m
+[32m+[m[32m                    Sie mit den richtigen Maßnahmen sparen können.[m
+[32m+[m[32m                </p>[m
+[32m+[m
+[32m+[m[32m                <a href="#kontakt">[m
+[32m+[m[32m                    Potenzial ermitteln →[m
+[32m+[m[32m                </a>[m
+[32m+[m
+[32m+[m[32m            </div>[m
+[32m+[m
+[32m+[m[32m        </div>[m
+[32m+[m
+[32m+[m[32m    </div>[m
+[32m+[m
+[32m+[m[32m</section>[m
+[32m+[m
+[32m+[m
+[32m+[m[32m<!-- ================= STATS ================= -->[m
+[32m+[m
+[32m+[m[32m<section class="stats">[m
+[32m+[m
+[32m+[m[32m    <div class="container stats-grid">[m
+[32m+[m
+[32m+[m[32m        <div class="stat">[m
+[32m+[m[32m            <strong>10+</strong>[m
+[32m+[m[32m            <span>Jahre Erfahrung</span>[m
+[32m+[m[32m        </div>[m
+[32m+[m
+[32m+[m[32m        <div class="stat">[m
+[32m+[m[32m            <strong>500+</strong>[m
+[32m+[m[32m            <span>Beratungen</span>[m
+[32m+[m[32m        </div>[m
+[32m+[m
+[32m+[m[32m        <div class="stat">[m
+[32m+[m[32m            <strong>30%</strong>[m
+[32m+[m[32m            <span>Ø. Einsparpotenzial</span>[m
+[32m+[m[32m        </div>[m
+[32m+[m
+[32m+[m[32m        <div class="stat">[m
+[32m+[m[32m            <strong>100%</strong>[m
+[32m+[m[32m            <span>Unabhängig</span>[m
+[32m+[m[32m        </div>[m
+[32m+[m
+[32m+[m[32m    </div>[m
+[32m+[m
+[32m+[m[32m</section>[m
+[32m+[m
+[32m+[m
+[32m+[m[32m<!-- ================= LEISTUNGEN ================= -->[m
+[32m+[m
+[32m+[m[32m<section class="section" id="leistungen">[m
+[32m+[m
+[32m+[m[32m    <div class="container">[m
+[32m+[m
+[32m+[m[32m        <div class="section-heading">[m
+[32m+[m
+[32m+[m[32m            <div class="eyebrow">[m
+[32m+[m[32m                UNSERE LEISTUNGEN[m
+[32m+[m[32m            </div>[m
+[32m+[m
+[32m+[m[32m            <h2>[m
+[32m+[m[32m                Energieberatung, die[m
+[32m+[m[32m                <span>weiterdenkt.</span>[m
+[32m+[m[32m            </h2>[m
+[32m+[m
+[32m+[m[32m            <p>[m
+[32m+[m[32m                Von der ersten Analyse bis zur Umsetzung:[m
+[32m+[m[32m                Wir entwickeln Lösungen, die zu Ihrer Immobilie,[m
+[32m+[m[32m                Ihrem Budget und Ihren Zielen passen.[m
+[32m+[m[32m            </p>[m
+[32m+[m
+[32m+[m[32m        </div>[m
+[32m+[m
+[32m+[m
+[32m+[m[32m        <div class="services-grid">[m
+[32m+[m
+[32m+[m[32m            <article class="service-card featured">[m
+[32m+[m
+[32m+[m[32m                <div class="service-icon">⌂</div>[m
+[32m+[m
+[32m+[m[32m                <h3>Gebäudeenergieberatung</h3>[m
+[32m+[m
+[32m+[m[32m                <p>[m
+[32m+[m[32m                    Wir analysieren den energetischen Zustand[m
+[32m+[m[32m                    Ihre
